@@ -41,7 +41,8 @@ public class QuantityTest {
         Assert.assertEquals(unit1.hashCode(), (new Quantity(1,"e", 100, "d")).hashCode());
         Assert.assertTrue(unit1 == unit1);
         Assert.assertEquals(unit1, unit2);
-        Assert.assertTrue(unit1 ==unit2);
+        Assert.assertEquals(unit2, unit1); //Unit Test works
+        Assert.assertTrue(unit1 ==unit2); // Unit Test Fails Boolean equality ??
 
     }
 }
