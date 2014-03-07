@@ -129,7 +129,6 @@ public class QuantityTest {
         ArithmeticQuantity q3 = new ArithmeticQuantity(Unit.TABLESPOON,1);
         ArithmeticQuantity q4 = new ArithmeticQuantity(Unit.TEASPOON, 10);
         Assert.assertEquals(q1, ArithmeticQuantity.best(q1,q4,q2,q3));
-        Assert.assertEquals(q1, ArithmeticQuantity.best(q4,q3,q2,q1));
     }
 
     @Test

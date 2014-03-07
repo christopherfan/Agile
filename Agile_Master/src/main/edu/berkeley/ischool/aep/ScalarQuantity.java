@@ -69,12 +69,7 @@ public class ScalarQuantity {
 
     public static ScalarQuantity best(ScalarQuantity... args){
         ScalarQuantity baseType = args[0];
-        for (ScalarQuantity q : args){
-            //System.out.println(q);
-            if(!q.checkSameUnitType(baseType)){
-                throw new RuntimeException("Mismatched Unit Type: " + q + " and "+ baseType);
-            }
-        }
+
         ScalarQuantity bestQuantity = args[0];
         for (ScalarQuantity q: args){
             if (1 == q.better(bestQuantity))

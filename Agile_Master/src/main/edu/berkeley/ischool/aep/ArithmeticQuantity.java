@@ -1,7 +1,7 @@
 package edu.berkeley.ischool.aep;
 
 /**
-    Unit equivalence
+    Understands Unit Equivalence and Addition
  */
 public class ArithmeticQuantity extends ScalarQuantity {
 
@@ -19,7 +19,7 @@ public class ArithmeticQuantity extends ScalarQuantity {
         }
     }
 
-    public static ScalarQuantity best(ArithmeticQuantity... args){
-        return ScalarQuantity.best(args);
-    }
+//    public static ScalarQuantity best(ArithmeticQuantity... args){
+//        return ScalarQuantity.best(args);
+//    }
 }
